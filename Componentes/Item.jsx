@@ -3,7 +3,7 @@ import imgGategori from './../navegador.png'
 const Item = ({item}) => {
   return (
 
-    <div className="col-sm-10" key={item.id}>
+    <div className="col-sm-10" key={item.nombre}>
         <p>{item.nombre}</p>
         <div className="row item">
             <div className="col-sm-3">

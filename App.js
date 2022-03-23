@@ -1,17 +1,33 @@
 import {useEffect,useState} from 'react'
 import Header from "./Componentes/Header"
 import Items from "./Componentes/Items"
+import React, {Component} from 'react'
+import Contacto from './Componentes/Contacto'
+
+import Agregarform from './Componentes/agregarform'
+
+function App() {
+  
+  //length
+
+   return (
+   <div className="container">
+   
+     <div className="row justify-content-center">
+       <Header/>
+       <Agregarform/>
+       <Contacto/>
+       
+     </div>
+   </div>
+    )
+  
+}
 
 
- function App() {
-  const [items, setitems] = useState(true);
-  useEffect(() => {
-    fetch("http://www.raydelto.org/agenda.php")
-      .then((response) => response.json())
-      .then((dog) => console.log(dog));
-  }, []);
-  
-  
+
+export default App;
+
   
   /*
   const items = ([
@@ -45,17 +61,3 @@ import Items from "./Componentes/Items"
       time: '03/05/2021'
     }
   ])*/
-  
-  return (
-   
-   <div className="container">
-     <div className="row justify-content-center">
-       <Header/> 
-       <Items items={items} />
-     </div>
-   </div>
-    )
-  
-}
-
-export default App;
