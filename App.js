@@ -3,7 +3,7 @@ import Header from "./Componentes/Header"
 import Items from "./Componentes/Items"
 import React, {Component} from 'react'
 import Contacto from './Componentes/Contacto'
-
+import './css/App.css'
 import Agregarform from './Componentes/agregarform'
 
 function App() {
@@ -11,15 +11,23 @@ function App() {
   //length
 
    return (
-   <div className="container">
    
-     <div className="row justify-content-center">
+   <header className='header'>
+   
+   <div className="container">
+     
+   
+     <div className="Container-centro">
        <Header/>
        <Agregarform/>
        <Contacto/>
-       
      </div>
+     
    </div>
+   </header>
+    
+   
+   
     )
   
 }

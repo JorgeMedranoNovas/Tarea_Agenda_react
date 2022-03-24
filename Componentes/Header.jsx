@@ -1,7 +1,7 @@
 const Header = props => {
   return (
     <div>
-      <h1> agenda Web</h1>
+      <h1 className="titulo"> agenda Web</h1>
     </div>
   )
 }

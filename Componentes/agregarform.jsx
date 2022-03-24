@@ -1,4 +1,6 @@
 import React from "react"
+
+
 class agregarform extends React.Component{
     constructor(props){
         super(props)
@@ -52,15 +54,18 @@ class agregarform extends React.Component{
             value={nombre}
             onChange={this.reci0}
             className="Nombre" 
-            type="text"/>
+            type="text"ç
+            placeholder="Nombre"/>
             <input
             value={apellido}
             onChange={this.reci1}
-            className="Apellido" type="text"/>
+            className="Apellido" type="text"
+            placeholder="Apellido"/>
             <input 
             value={telefono}
             onChange={this.reci2}
-            className="Telefono" type="text"/>
+            className="Telefono" type="text"
+            placeholder="Telefono"/>
             <button onClick={ ()=>Enviar(contacto) } className="enviar">Enviar</button>
             
         </div>
